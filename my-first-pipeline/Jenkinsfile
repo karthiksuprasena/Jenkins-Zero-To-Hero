@@ -8,5 +8,11 @@ pipeline {
         sh 'node --version'
       }
     }
+    stage('npm install') {
+      steps {
+        sh 'npm install'
+        sh 'npm --version'
+      }
+    }
   }
 }
